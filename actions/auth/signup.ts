@@ -37,9 +37,12 @@ export const handleSignupSubmit = async (inputValues: {
         phoneSMS: "+1234567890", // Dummy phone number
       },
     };
+const value = await apiClient?.AuthProvider.signUp("email", data);
 
-    const value = await apiClient?.AuthProvider.signUp("email", data);
-    return value;
+console.log("Signup Response:", value);
+
+return value;
+   
   } catch (error: any) {
     console.error(error);
     if (error?.statusCode === 400) {

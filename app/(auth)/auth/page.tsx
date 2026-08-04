@@ -125,7 +125,7 @@ export default function AuthPage() {
 
         {/*Form header*/}
         <div>
-                 <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent pb-3'>
+                 <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-linear-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent pb-3'>
               {isSignUp ? 'Sign Up' : 'Sign In'}
             </h2>
             <p className='text-base sm:text-lg lg:text-xl text-gray-400 mb-6 sm:mb-8'>
@@ -173,7 +173,8 @@ export default function AuthPage() {
 
               <div>
                 <Button
-                  className='w-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white text-base sm:text-xl font-bold p-4 sm:p-6 rounded-md shadow-xl transition-colors duration-300 ease-in-out cursor-pointer'
+                  type="submit"
+                  className='w-full bg-linear-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white text-base sm:text-xl font-bold p-4 sm:p-6 rounded-md shadow-xl transition-colors duration-300 ease-in-out cursor-pointer'
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
